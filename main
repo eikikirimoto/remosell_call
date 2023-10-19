@@ -5,8 +5,8 @@ const port = 443;
 const fs = require('fs')
 const server = require('https').createServer(
   {
-    key: fs.readFileSync('./cert/2023.10.12_wildcard.shyme.net.privkey.pem'),
-    cert: fs.readFileSync('./cert/2023.10.12_wildcard.shyme.net.fullchain.pem')
+    key: fs.readFileSync('/usr/local/remosell/cert/2023.10.12_wildcard.shyme.net.privkey.pem'),
+    cert: fs.readFileSync('/usr/local/remosell/cert/2023.10.12_wildcard.shyme.net.fullchain.pem')
   },
   app
 )
