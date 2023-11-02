@@ -1,1 +1,30 @@
-// app global css in SCSS form
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.__shyme-page-container {
+  width: 100vw;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+.q-tab-panel {
+  width: 100% !important;
+  height: calc(100vh - 90px) !important;
+  overflow: auto;
+}
+.q-toolbar {
+  min-height: 45px !important;
+}
+.q-tabs--dense .q-tab--full {
+  min-height: 45px !important;
+}
+.q-tab__icon {
+  font-size: 20px !important;
+}
+.q-tab__label {
+  font-size: 7px !important;
+  text-transform: none !important;
+}

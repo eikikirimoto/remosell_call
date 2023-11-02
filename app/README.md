@@ -1,6 +1,6 @@
-# Remosell Call (remosell-call)
+# Remosell Call App (remosell-call-app)
 
-Remosell Call
+Remosell Call App
 
 ## Install the dependencies
 ```bash
