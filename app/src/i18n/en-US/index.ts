@@ -2,24 +2,26 @@ export default {
   sample: {
     mails: 'Mails',
     alarms: 'Alarms',
-    movies: 'Movies'
+    movies: 'Movies',
   },
   phone: {
     title: 'Phone',
     tab: {
-      call: 'Call'
+      call: 'Call',
+      tab02: 'Tab02',
+      tab03: 'Tab03',
     },
     pannel_title: {
       // call: ''
-    }
+    },
   },
   settings: {
     title: 'Settings',
     tab: {
-      common: 'Common'
+      common: 'Common',
     },
     panel_title: {
-      common: 'Common Settings'
-    }
-  }
-}
+      common: 'Common Settings',
+    },
+  },
+};

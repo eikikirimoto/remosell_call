@@ -3,7 +3,7 @@
     <SettingsHeader>
       <SettingsDrawer />
     </SettingsHeader>
-    <div class="__shyme-page-container">
+    <div class="__remosell-page-container">
       <SettingsContainer />
     </div>
     <SettingsFooter />
@@ -11,18 +11,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import SettingsHeader from 'components/header/SettingsHeader.vue'
-import SettingsDrawer from 'components/drawer/SettingsDrawer.vue'
-import SettingsContainer from 'components/container/SettingsContainer.vue'
-import SettingsFooter from 'components/footer/SettingsFooter.vue'
+import { defineComponent } from 'vue';
+import SettingsHeader from 'components/header/SettingsHeader.vue';
+import SettingsDrawer from 'components/drawer/SettingsDrawer.vue';
+import SettingsContainer from 'components/container/SettingsContainer.vue';
+import SettingsFooter from 'components/footer/SettingsFooter.vue';
 
 export default defineComponent({
   components: {
     SettingsHeader,
     SettingsDrawer,
     SettingsContainer,
-    SettingsFooter
-  }
-})
+    SettingsFooter,
+  },
+});
 </script>

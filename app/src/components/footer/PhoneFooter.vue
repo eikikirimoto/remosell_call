@@ -1,6 +1,6 @@
 <template>
   <q-footer bordered class="bg-white text-dark">
-    <q-toolbar style="padding: 0;">
+    <q-toolbar style="padding: 0">
       <q-tabs
         v-model="tab"
         switch-indicator
@@ -8,42 +8,63 @@
         class="text-dark"
         dense
       >
-        <q-tab :name="Tab.PHONE.CALL.name" :icon="Tab.PHONE.CALL.icon" :label="$t('phone.tab.call')" />
+        <q-tab
+          :name="Tab.PHONE.CALL.name"
+          :icon="Tab.PHONE.CALL.icon"
+          :label="$t('phone.tab.call')"
+        />
+        <q-tab
+          :name="Tab.PHONE.TAB02.name"
+          :icon="Tab.PHONE.TAB02.icon"
+          :label="$t('phone.tab.tab02')"
+        />
+        <q-tab
+          :name="Tab.PHONE.TAB03.name"
+          :icon="Tab.PHONE.TAB03.icon"
+          :label="$t('phone.tab.tab03')"
+        />
       </q-tabs>
-      <q-space ></q-space>
-      <q-btn flat round dense icon="apps" class="q-mr-sm" @click="toggleRightDrawer" />
+      <q-space></q-space>
+      <q-btn
+        flat
+        round
+        dense
+        icon="apps"
+        class="q-mr-sm"
+        @click="toggleRightDrawer"
+      />
     </q-toolbar>
   </q-footer>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { mapActions } from 'pinia'
-import { useCommonStore } from 'src/stores/common-store'
-import Tab from 'src/enums/Tab'
+import { defineComponent } from 'vue';
+import { mapActions } from 'pinia';
+import { useCommonStore } from 'src/stores/common-store';
+import Tab from 'src/enums/Tab';
 
-const commonStore = useCommonStore()
+const commonStore = useCommonStore();
 
 export default defineComponent({
-  setup () {
+  setup() {
     return {
-      Tab
-    }
+      Tab,
+    };
   },
-  data () {
+  data() {
     return {
-      tab: commonStore.phoneTab
-    }
+      tab: commonStore.phoneTab,
+    };
   },
   methods: {
-    ...mapActions(useCommonStore, ['toggleRightDrawer', 'setPhoneTab'])
+    ...mapActions(useCommonStore, ['toggleRightDrawer', 'setPhoneTab']),
   },
   watch: {
-    tab (nval: string): void {
-      this.setPhoneTab(nval)
-    }
+    tab(nval: string): void {
+      this.setPhoneTab(nval);
+    },
   },
-  created () {
-    this.setPhoneTab(this.tab)
-  }
-})
+  created() {
+    this.setPhoneTab(this.tab);
+  },
+});
 </script>

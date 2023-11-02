@@ -1,6 +1,8 @@
 <template>
   <q-tab-panels v-model="phoneTab" animated>
-    <q-tab-panel :name="Tab.PHONE.CALL.name"> aaa </q-tab-panel>
+    <q-tab-panel :name="Tab.PHONE.CALL.name">Call Tab !!</q-tab-panel>
+    <q-tab-panel :name="Tab.PHONE.TAB02.name">Tab02 Tab !!</q-tab-panel>
+    <q-tab-panel :name="Tab.PHONE.TAB03.name">Tab03 Tab !!</q-tab-panel>
   </q-tab-panels>
 </template>
 <script lang="ts">
